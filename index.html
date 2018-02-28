@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cat clicker</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                    <h1 id="incremental1"></h1>
+                    <h3 id="cat-name1"></h3>
+                    <img src="cat.jpg" id="my-elem1">
+            </td>
+            <td>
+                    <h1 id="incremental2"></h1>
+    <h3 id="cat-name2"></h3>
+    <img src="cat2.jpg" id="my-elem2">
+            </td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        var x=0;
+        var catname1="WEEE";
+
+        var y=0;
+        var catname2="soooo";
+
+        document.getElementById("incremental1").innerHTML=x;
+        document.getElementById("cat-name1").innerHTML=catname1;
+        var element=document.getElementById('my-elem1');
+        element.addEventListener('click',function(){
+            x=x+1;
+            document.getElementById("incremental1").innerHTML=x;
+        },false);
+
+
+          document.getElementById("incremental2").innerHTML=y;
+          document.getElementById("cat-name2").innerHTML=catname2;
+        var element2=document.getElementById('my-elem2');
+        element2.addEventListener('click',function(){
+            y=y+1;
+            document.getElementById("incremental2").innerHTML=y;
+        },false);
+        </script>
+</body>
+</html>
